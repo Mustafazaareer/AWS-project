@@ -14,7 +14,7 @@ cd app && npm install
 npm run build
 
 sudo mv ./infrastructure/app.service /etc/systemd/system/
-sudo systemctl deamon-reload
+sudo systemctl daemon-reload
 sudo systemctl enable app.service
 sudo reboot
 
