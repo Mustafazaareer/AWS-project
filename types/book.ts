@@ -1,7 +1,6 @@
 import express from 'express'
 namespace Book{
     export interface item{
-        name: string
         id:number,
         title:string,
         author:string,
