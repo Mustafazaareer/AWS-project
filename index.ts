@@ -1,9 +1,11 @@
 import express from 'express';
 import  {logger}  from './middlewares/generic';
 import bookRoute from './routes/book';
+import dotenv from "dotenv"
 
+dotenv.config();
 const app =express();
-const PORT =3400;
+const PORT =process.env.PORT || 3400;
 
 app.use(express.json());
 app.use(logger);
