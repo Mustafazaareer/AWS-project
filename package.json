@@ -2,8 +2,8 @@
   "name": "lecture_6",
   "version": "1.0.0",
   "description": "",
-  "main": "./dest/index",
-  "type": "commonjs",
+  "main": "./dist/index.js",
+  "type": "module",
   "scripts": {
     "build-tsc": "tsc -w",
     "build": "tsc",
