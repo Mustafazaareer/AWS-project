@@ -5,6 +5,11 @@
   "main": "./dest/index.js",
   "type": "commonjs",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -w",
+    "build":"tsc",
+    "start": "nodemon ./dist/index.js",
+    "dev": "concurrently \"npm run compile\"  \"npm run start\""
     "build-tsc": "tsc -w",
     "build": "tsc",
     "start": "nodemon ./dest",
