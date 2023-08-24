@@ -9,10 +9,6 @@
     "compile": "tsc -w",
     "build":"tsc",
     "start": "nodemon ./dist/index.js",
-    "dev": "concurrently \"npm run compile\"  \"npm run start\""
-    "build-tsc": "tsc -w",
-    "build": "tsc",
-    "start": "nodemon ./dest",
     "dev": "concurrently \"npm run build-tsc\" \"npm run start\""
   },
   "author": "",
