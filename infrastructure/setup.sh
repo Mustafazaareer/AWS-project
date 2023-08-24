@@ -1,20 +1,18 @@
 #!/bin/bash
+set -e
+
 sudo apt update
 sudo apt upgrade -y
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
-#install nodejs
+sudo apt install nodejs curl -y
 
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
-
-sudo apt-get install  nodejs curl -y
-
-
-git clone https://github.com/Mustafazaareer/book-app-mustafa.git app 
+cd /home/mustafa
+git clone https://github.com/khaledez/Books-API-Shadi.git app
 cd app && npm install
 npm run build
 
 sudo mv ./infrastructure/app.service /etc/systemd/system/
-sudo systemctl deamon-reload
+sudo systemctl daemon-reload
 sudo systemctl enable app.service
 sudo reboot
-
