@@ -3,7 +3,7 @@ import  {logger}  from './middlewares/generic';
 import bookRoute from './routes/book';
 import dotenv from "dotenv"
 
-dotenv.config({path:'config.env'});
+dotenv.config();
 const app =express();
 const PORT =process.env.PORT || 80;
 
