@@ -7,7 +7,7 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
 sudo apt install nodejs curl -y
 
-cd /home/mustafa
+cd /home/ubuntu
 git clone https://github.com/khaledez/Books-API-Shadi.git app
 cd app && npm install
 npm run build
