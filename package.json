@@ -2,12 +2,12 @@
   "name": "lecture_6",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
+  "main": "./dest/index.js",
   "type": "module",
   "scripts": {
     "build-tsc": "tsc -w",
     "build": "tsc",
-    "start": "nodemon ./dist",
+    "start": "nodemon ./dest",
     "dev": "concurrently \"npm run build-tsc\" \"npm run start\""
   },
   "author": "",
